@@ -1,0 +1,16 @@
+<div class="caixa">
+  <div class="caixa__semana">
+    <label>
+      Semana <span class="caixa__numero">{{ semana.numeroSemana }}</span>
+    </label>
+    <app-botao-download (iniciaGiro)="giraProgresso()"></app-botao-download>
+  </div>
+  <div class="caixa__progresso">
+    <app-progresso
+      *ngFor="let materia of semana.materias"
+      [materia]="materia"
+      [acionaGiro]="ativaGiro"
+    ></app-progresso>
+    <app-download-componente></app-download-componente>
+  </div>
+</div>

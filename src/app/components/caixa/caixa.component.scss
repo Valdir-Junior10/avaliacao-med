@@ -1,0 +1,30 @@
+.caixa {
+  background-color: black;
+  color: white;
+  border-radius: 60px 200px 200px 60px;
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+  height: 72px;
+}
+
+.caixa--active {
+  background-color: rgb(53, 138, 105);
+  margin: 80px;
+}
+
+.caixa__semana {
+  font-size: 8px;
+  margin-left: 2px;
+  margin-right: auto;
+}
+
+.caixa__numero {
+  display: block;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.caixa__progresso {
+  display: flex;
+}

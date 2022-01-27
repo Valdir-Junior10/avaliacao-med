@@ -1,0 +1,7 @@
+{
+  "name": "avaliacao-med",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

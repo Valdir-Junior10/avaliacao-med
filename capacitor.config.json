@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "avaliacao-med",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
