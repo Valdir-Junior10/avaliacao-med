@@ -9,6 +9,7 @@ import { IMateria } from 'src/app/models/materia.interface';
 export class ProgressoComponent implements OnInit {
   @Input() acionaGiro: boolean;
   @Input() materia: IMateria;
+  @Input() active: boolean;
 
   constructor() {}
 

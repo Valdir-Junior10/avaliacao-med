@@ -1,7 +1,6 @@
 .estante {
-  background-color: rgb(52, 59, 58);
   display: grid;
   grid-template-columns: 2fr 2fr;
-  overflow: scroll;
-  padding-top: 56px;
+  padding: 16px;
+  gap: 5px;
 }

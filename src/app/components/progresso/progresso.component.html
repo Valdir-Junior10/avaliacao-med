@@ -1,12 +1,19 @@
-<!-- <div class="progresso" [ngClass]="{ 'progresso--girar': acionaGiro }">
-  <label class="progresso__materia"
-    >{{ materia.nome
-    }}<label class="progresso__numero">{{ materia.numero }}</label>
-  </label>
-</div> -->
-<div class="progresso" [ngClass]="{ 'progresso--girar': acionaGiro }">
+<div
+  class="progresso"
+  [ngClass]="{ 'progresso--girar': acionaGiro, 'progresso--active': active }"
+>
   <div class="progresso__container">
-    <div class="progresso__front"><p>Paragrafo front</p></div>
-    <div class="progresso__back"><p>Paragrafo back</p></div>
+    <div class="progresso__side progresso__side--front">
+      <p class="progresso__text">
+        {{ materia.nome }}
+        <span class="progresso__line-break">{{ materia.numero }}</span>
+      </p>
+    </div>
+    <div class="progresso__side progresso__side--back">
+      <p class="progresso__text">
+        {{ materia.nome }}
+        <span class="progresso__line-break">{{ materia.numero }}</span>
+      </p>
+    </div>
   </div>
 </div>

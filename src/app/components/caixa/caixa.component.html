@@ -1,8 +1,13 @@
-<div class="caixa">
+<div class="caixa" [ngClass]="{ 'caixa--active': semana.active }">
   <div class="caixa__semana">
-    <label>
-      Semana <span class="caixa__numero">{{ semana.numeroSemana }}</span>
-    </label>
+    <div class="caixa__text-container" *ngIf="!semana.active">
+      <span class="caixa__semana">Semana</span>
+      <span class="caixa__numero">{{ semana.numeroSemana }}</span>
+    </div>
+    <div class="caixa__text-container" *ngIf="semana.active">
+      <span class="caixa__text">{{ semana.dataInicial }}</span>
+      <span class="caixa__text">{{ semana.dataFinal }}</span>
+    </div>
     <app-botao-download (iniciaGiro)="giraProgresso()"></app-botao-download>
   </div>
   <div class="caixa__progresso">
@@ -10,6 +15,7 @@
       *ngFor="let materia of semana.materias"
       [materia]="materia"
       [acionaGiro]="ativaGiro"
+      [active]="semana.active"
     ></app-progresso>
     <app-download-componente></app-download-componente>
   </div>
